@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <title>LS tools - Welcome</title>
+  <meta charset="utf-8">
+  <script src="calculation.js"></script>
+</head>
+<body>
+  <h1><a href="index.html">LS tools</a></h1>
+  <ol>
+    <li><a href="1.html">얀 잔량</a></li>
+  </ol>
+  <h2>얀 잔량 계산</h2>
+  <p>
+      <select id='얀종류' onchange="yarn_left()">
+      <option value=''>자재 타입</option>
+      <optgroup label="아라미드얀">
+        <option value= "9000">denier</option>
+        <option value= "10000">dtex</option>
+      </optgroup>
+      <optgroup label="글라스얀">
+        <option value="1000">tex</option>
+      </optgroup>
+      </select>
+      <select id='밀도'onchange="yarn_left()">
+        <option value=''>선밀도</option>
+      <option value='1420'>1420den</option>
+      <option value='2840'>2840den</option>
+      <option value='7100'>7100den</option>
+      </select>
+      <input type="text" size = "15" id="측정중량" placeholder="측정치 중량" onchange="yarn_left()">kg
+      <p>
+        <h3>잔량 계산 결과 = <span id="result"></span> m</h3>
+      </p>
+</body>
+</html>
