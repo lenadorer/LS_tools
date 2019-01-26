@@ -67,7 +67,19 @@ a { /* a is selector for a tag*/
 	color:black; /* property and value */
 }
 
-label {
-	padding : 10px;
-	display: block;
+.연입율 {
+display : grid;
+grid-template-columns: 150px 1fr;
+}
+.입력제목 {
+	vertical-align: middle;
+	line-height:28px;
+	padding:5px;
+}
+
+.입력 {
+	width: 130px;
+	height:24px;
+	text-align:center;
+	margin :5px;
 }

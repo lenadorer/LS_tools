@@ -26,16 +26,28 @@
         <!-- nav -->
         <div class="content">
           <span style="font-weight:bold">연입율 계산툴</span>
+          <div class="연입율">
+            <div style="padding:5px;">
+              <div class="입력제목" >
+                코어경
+              </div>
+              <div class="입력제목">
+                유닛 외경
+              </div>
+              <div class="입력제목">
+                집합/연합 피치
+              </div>
+              <br>
+
+            </div>
+            <div>
+            <input type="text" class="입력" id="코어" placeholder="하경 입력" onchange="연입율()" > mm<br>
+            <input type="text" class="입력" id="유닛" placeholder="유닛 외경" onchange="연입율()"> mm<br>
+            <input type="text" class="입력" id="피치" placeholder="피치" onchange="연입율()"> mm<br>
+            </div>
+          </div>
           <p>
-            <label>코어경</label>
-            <input type="text" style="width: 130px;height:24px;text-align:center;" id="코어" placeholder="하경 입력" onchange="연입율()" > mm<br>
-            <label>유닛 외경</label>
-            <input type="text" style="width: 130px;height:24px;text-align:center;" id="유닛" placeholder="유닛 외경" onchange="연입율()"> mm<br>
-            <label>집합/연합 피치</label>
-            <input type="text" style="width: 130px;height:24px;text-align:center;" id="피치" placeholder="피치" onchange="연입율()"> mm<br>
-        </p>
-          <p>
-            연입율 계산 결과 = <span id="결과"></span> %<br>
+            연입율 계산 결과 = <span style="display:inline-block;width:170px;text-align:center;" id="결과"></span> %<br>
           </p>
         </div>
       </div>
