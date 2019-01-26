@@ -2,7 +2,7 @@ function 얀잔량(){
   var density = document.getElementById('타입').value.split(" ");
   var weight = document.getElementById('중량').value;
   var net_weigth = 0;
-  if(density[0]<4000){net_weight=weight-0.34;}else{net_weight=weight-0.5;};
+  if(density[0]<4000){net_weight=weight-0.34;}else{net_weight=weight-0.46;};
   var unit = 9000;
   if (density[1]=="den"){unit=9000;}else if(density[1]=="dtex"){unit=10000;}else if(density[1]=="tex"){unit=1000;}
   if(weight == null || weight =="" || weight == 0 ){
