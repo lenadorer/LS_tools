@@ -1,0 +1,73 @@
+#active{
+	background: #777;
+	color: #ddd;
+}
+.frame {
+	width: auto;
+	height : auto;
+	margin: 0 auto;
+
+}
+.header {
+	text-align: center;
+}
+.logo {
+	font-size: 30px;
+	/* font-weight: bold; */
+	padding: 20px;
+	margin : auto auto;
+	display: block;
+	text-align: center;
+	background-color: steelblue;
+}
+.container {
+	text-align: left;
+	display : grid;
+	grid-template-columns: 150px 1fr;
+}
+@media (max-width:600px) {
+	.container{
+		display : inline-block;
+		width:100%;
+	}
+}
+
+.nav {
+	background: #aaa;
+	color: #111;
+}
+
+.nav-list {
+	list-style: none;
+	margin: 0px;
+	padding: 10px 10px;
+}
+
+.content {
+	float: left;
+	background-color: white;
+	height:65vh;
+	width:100%;
+	padding: 20px 10px 10px 10px;
+}
+
+.footer {
+	border-top: 1px solid #aaa;
+	margin: 20px 20px 0;
+	font-size: 12px;
+}
+
+body {
+	  font-family: 'Jeju Gothic', sans-serif;
+    text-decoration: none;
+	}
+
+a { /* a is selector for a tag*/
+  text-decoration: none; /* the sentence is declaration */
+	color:black; /* property and value */
+}
+
+label {
+	padding : 10px;
+	display: block;
+}
