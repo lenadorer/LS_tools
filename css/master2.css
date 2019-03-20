@@ -11,12 +11,13 @@
 }
 .frame {
 	width: auto;
-	height : auto;
+	height : 100%;
 	margin: 0 auto;
 
 }
 .header {
 	text-align: center;
+	height:100%;
 }
 .logo {
 	font-size: 30px;
@@ -31,6 +32,7 @@
 .container {
 	display : grid;
 	grid-template-columns: 150px 1fr;
+	height:100%;
 }
 @media (max-width:500px) {
 	.container{
@@ -58,7 +60,9 @@
 .content {
 	float: left;
 	background-color: white;
-	height:50vh;
+	height:100%;
+	min-height: 430px;
+	margin-bottom:0px;
 	padding: 10px;
 	margin:0;
 	grid-template-columns: 1fr;
@@ -68,6 +72,8 @@
 	border-top: 1px solid #aaa;
 	margin: 20px 20px 0;
 	font-size: 12px;
+	position:relative;
+	margin-bottom: 0;
 }
 
 
@@ -115,6 +121,7 @@ input {
 body {
 	  font-family: 'Jeju Gothic', sans-serif;
     text-decoration: none;
+		height:auto;
 	}
 
 a { /* a is selector for a tag*/
