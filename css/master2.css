@@ -2,6 +2,13 @@
 	background: #777;
 	color: #fff;
 }
+
+#result{
+	/* font-weight: bold; */
+	font-size:large;
+	border:0;
+	color:#666666;
+}
 .frame {
 	width: auto;
 	height : auto;
@@ -20,8 +27,8 @@
 	text-align: center;
 	background-color: steelblue;
 }
+
 .container {
-	text-align: left;
 	display : grid;
 	grid-template-columns: 150px 1fr;
 }
@@ -30,9 +37,13 @@
 		display : inline-block;
 		width:100%;
 	}
-
 }
-
+@media (min-width:501px){
+	li a{
+		width:150px;
+		padding:5px 0px 5px 0px;
+	}
+}
 .nav {
 	background: #aaa;
 	color: #111;
@@ -48,8 +59,9 @@
 	float: left;
 	background-color: white;
 	height:50vh;
-	width:100%;
 	padding: 10px;
+	margin:0;
+	grid-template-columns: 1fr;
 }
 
 .footer {
@@ -58,6 +70,12 @@
 	font-size: 12px;
 }
 
+
+table{
+	/* margin:10px; */
+	width:auto;
+
+}
 ul {
  list-style-type: none;
  margin: 0;
@@ -80,11 +98,18 @@ li a {
   padding: 8px 16px 8px 16px;
   text-decoration: none;
 }
-@media (min-width:501px){
-	li a{
-		width:150px;
-		padding:5px 0px 5px 0px;
-	}
+
+tr{
+		height: 50px;
+}
+td input{
+	text-align:center;
+	width:100%;
+}
+
+input {
+	height:24px;
+	text-align: center;
 }
 
 body {
@@ -97,19 +122,22 @@ a { /* a is selector for a tag*/
 	color:black; /* property and value */
 }
 
-.연입율 {
-display : grid;
-grid-template-columns: 150px 1fr;
-}
-.입력제목 {
-	vertical-align: middle;
-	line-height:28px;
-	padding:5px;
+#타입{
+	width:100%;}
+
+td#unit{
+	width:5%;
 }
 
-.입력 {
-	width: 130px;
-	height:24px;
-	text-align:center;
-	margin :5px;
+#value{
+	width:50%;
+}
+#item{
+	width:45%;
+}
+
+td#tool_title{
+	font-weight:bold;
+	text-align:left;
+	font-size:large;
 }
