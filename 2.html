@@ -25,34 +25,49 @@
         </div>
         <!-- nav -->
         <div class="content">
-          <span style="font-weight:bold">얀 잔량 계산툴</span>
-          <p style="vertical-align: top">
-            <select style="width: 130px;height:30px;" id='타입' onchange="얀잔량()">
-            <option value='0 den'>Select a yarn</option>
-            <optgroup label="Kolon">
-              <option value='1497 den'>1420 den</option>
-              <option value='2953 den'>2840 den</option>
-              <option value='7371 den'>7100 den</option>
-            </optgroup>
-            <optgroup label="테이진">
-              <option value='1697 dtex'>1610 dtex</option>
-              <option value='3371 dtex'>3220 dtex</option>
-              <option value='8430 dtex'>8050 dtex</option>
-            </optgroup>
-            <optgroup label="태광">
-              <option value='1500 den'>1500 den</option>
-              <option value='3000 den'>3000 den</option>
-            </optgroup>
-            <optgroup label="글라스얀">
-              <option value="785 tex">785 tex</option>
-              <option value="2200 tex">2200 tex</option>
-            </optgroup>
-          </select>
-          <input type="text" style="width: 130px;height:24px;text-align:center;" id="중량" value="0." placeholder="Measured Weight" onchange="얀잔량()"> kg
-        </p>
-          <p>
-            잔량 계산 결과 = <span style="display:inline-block;width:150px;text-align:center;" id="결과"></span> m
-          </p>
+          <table>
+            <tr>
+                <td id="tool_title" colspan="3">얀 잔량 계산툴</span></td>
+            </tr>
+            <tr>
+              <td id="item">
+                <select  style="height:30px;text-align-last:center;" id='타입' onchange="얀잔량()">
+                  <option value='0 den'>Select a yarn</option>
+                  <optgroup label="Kolon">
+                    <option value='1497 den'>1420 den</option>
+                    <option value='2953 den'>2840 den</option>
+                    <option value='7371 den'>7100 den</option>
+                  </optgroup>
+                  <optgroup label="테이진">
+                    <option value='1697 dtex'>1610 dtex</option>
+                    <option value='3371 dtex'>3220 dtex</option>
+                    <option value='8430 dtex'>8050 dtex</option>
+                  </optgroup>
+                  <optgroup label="태광">
+                    <option value='1500 den'>1500 den</option>
+                    <option value='3000 den'>3000 den</option>
+                  </optgroup>
+                  <optgroup label="글라스얀">
+                    <option value="785 tex">785 tex</option>
+                    <option value="2200 tex">2200 tex</option>
+                  </optgroup>
+                </select>
+              </td>
+              <td id="value"><input type="text" id="중량" placeholder="Total measured weight" onchange="얀잔량()"></td>
+              <td id="unit">kg</td>
+            </tr>
+            <tr>
+              <td>지관 수 입력</td>
+              <td><input type="text" id="지관" value="1" placeholder="Number of Paper Tubes" onchange="얀잔량()"> </td>
+              <td>EA</td>
+            </tr>
+
+            <tr id="result">
+              <td>잔량 총 조장</td>
+              <td><span id="결과"></span></td>
+              <td>m</td>
+            </tr>
+          </table>
         </div>
       </div>
       <!-- container -->

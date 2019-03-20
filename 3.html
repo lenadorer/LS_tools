@@ -25,30 +25,31 @@
         </div>
         <!-- nav -->
         <div class="content">
-          <span style="font-weight:bold">연입율 계산툴</span>
-          <div class="연입율">
-            <div style="padding:5px;">
-              <div class="입력제목" >
-                코어경
-              </div>
-              <div class="입력제목">
-                유닛 외경
-              </div>
-              <div class="입력제목">
-                집합/연합 피치
-              </div>
-              <br>
-
-            </div>
-            <div>
-            <input type="text" class="입력" id="코어" placeholder="하경 입력" onchange="연입율()" > mm<br>
-            <input type="text" class="입력" id="유닛" placeholder="유닛 외경" onchange="연입율()"> mm<br>
-            <input type="text" class="입력" id="피치" placeholder="피치" onchange="연입율()"> mm<br>
-            </div>
-          </div>
-          <p>
-            연입율 계산 결과 = <span style="display:inline-block;width:170px;text-align:center;" id="결과"></span> %<br>
-          </p>
+          <table>
+            <tr>
+              <td id="tool_title" colspan="3">연입율 계산툴</td>
+            </tr>
+            <tr>
+              <td id="item">횡권/집합/연합 하경</td>
+              <td id="value"><input type="text" class="입력" id="코어" placeholder="Input inner diameter" onchange="연입율()" ></td>
+              <td id="unit">mm</td>
+            </tr>
+            <tr>
+              <td>유닛 외경</td>
+              <td><input type="text" class="입력" id="유닛" placeholder="Input Unit OD" onchange="연입율()"></td>
+              <td id="unit">mm</td>
+            </tr>
+            <tr>
+              <td>횡권/집합/연합 피치</td>
+              <td ><input type="text" class="입력" id="피치" placeholder="Input Pitch" onchange="연입율()"></td>
+              <td id="unit">mm</td>
+            </tr>
+            <tr id="result">
+              <td >연입율</td>
+              <td><span id="결과"></span></td>
+              <td>%</td>
+            </tr>
+          </table>
         </div>
       </div>
       <!-- container -->

@@ -1,8 +1,9 @@
 function 얀잔량(){
   var density = document.getElementById('타입').value.split(" ");
   var weight = document.getElementById('중량').value;
+  var papertube = document.getElementById('지관').value;
   var net_weigth = 0;
-  if(density[0]<4000){net_weight=weight-0.34;}else{net_weight=weight-0.46;};
+  if(density[0]<4000){net_weight=weight-0.34*papertube;}else{net_weight=weight-0.46*papertube;};
   var unit = 9000;
   if (density[1]=="den"){unit=9000;}else if(density[1]=="dtex"){unit=10000;}else if(density[1]=="tex"){unit=1000;}
   if(weight == null || weight =="" || weight == 0 ){
@@ -11,8 +12,6 @@ function 얀잔량(){
   var length = net_weight / (density[0] / unit) *1000;
   if(length<0){length = 0}
   document.getElementById('결과').innerHTML = formatNumber(Math.round(length));
-  document.getElementById('밀도').innerHTML = density[0];
-  document.getElementById('유닛').innerHTML = unit;
   }
 }
 
