@@ -35,7 +35,7 @@
                   <option value='0 den'>Select a yarn</option>
                   <optgroup label="Kolon">
                     <option value='1497 den'>1420 den</option>
-                    <option value='2953 den'>2840 den</option>
+                    <option value='2953 den' selected>2840 den</option>
                     <option value='7371 den'>7100 den</option>
                   </optgroup>
                   <optgroup label="테이진">
@@ -58,8 +58,20 @@
             </tr>
             <tr>
               <td>지관 수 입력</td>
-              <td><input type="text" id="지관" value="1" placeholder="Number of Paper Tubes" onchange="얀잔량()"> </td>
+              <td><input type="text" id="지관" value="1" placeholder="Number of Paper Tubes" onchange="얀잔량()"></td>
               <td>EA</td>
+            </tr>
+            <tr>
+              <td>포장 중량 입력</td>
+              <td>
+                <input type="text" id="포장" placeholder="Package weight" onchange="얀잔량()" value="0">
+              </td>
+              <td>kg</td>
+            </tr>
+            <tr>
+              <td>순준량</td>
+              <td><span id="순준량"></span></td>
+              <td>kg</td>
             </tr>
 
             <tr id="result">
@@ -72,7 +84,7 @@
       </div>
       <!-- container -->
       <div class="footer">
-        <p class="copyright">&copy; 2019 by MANSU</p>
+        <p class="copyright">&copy;copy 2019</p>
       </div>
       <!-- footer -->
     </div>
