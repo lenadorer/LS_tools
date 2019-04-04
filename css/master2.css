@@ -148,3 +148,22 @@ td#tool_title{
 	text-align:left;
 	font-size:large;
 }
+
+.button {
+  background-color: steelblue;
+  border: none;
+  color: white;
+	width:100%;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+}
+.statement {
+	text-align:left;
+	font-size:small;
+
+}

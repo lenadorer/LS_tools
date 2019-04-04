@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/master2.css">
   <link href="http://fonts.googleapis.com/earlyaccess/jejugothic.css" rel="stylesheet">
-  <script src="calculation2.js"></script>
+  <script src="calculation.js"></script>
 </head>
 
 <body>
@@ -19,6 +19,7 @@
       <div class="container">
         <div class="nav">
           <ul class="nav-list">
+            <li><a href="1.html">마킹 코드</a></li>
             <li><a href="2.html">얀 잔량</a></li>
             <li><a href="3.html" id="active">연입율</a></li>
           </ul>
@@ -35,12 +36,12 @@
               <td id="unit">mm</td>
             </tr>
             <tr>
-              <td>유닛 외경</td>
+              <td id="item">유닛 외경</td>
               <td><input type="text" class="입력" id="유닛" placeholder="Input Unit OD" onchange="연입율()"></td>
               <td id="unit">mm</td>
             </tr>
             <tr>
-              <td>횡권/집합 피치</td>
+              <td id="item">횡권/집합 피치</td>
               <td ><input type="text" class="입력" id="피치" placeholder="Input Pitch" onchange="연입율()"></td>
               <td id="unit">mm</td>
             </tr>

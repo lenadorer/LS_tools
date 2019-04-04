@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/master2.css">
   <link href="http://fonts.googleapis.com/earlyaccess/jejugothic.css" rel="stylesheet">
-  <script src="calculation2.js"></script>
+  <script src="calculation.js"></script>
 </head>
 
 <body>
@@ -19,6 +19,7 @@
       <div class="container">
         <div class="nav">
           <ul class="nav-list">
+            <li><a href="1.html">마킹 코드</a></li>
             <li><a href="2.html" id="active">얀 잔량</a></li>
             <li><a href="3.html">연입율</a></li>
           </ul>
@@ -51,20 +52,25 @@
                     <option value="785 tex">785 tex</option>
                     <option value="2200 tex">2200 tex</option>
                   </optgroup>
+                  <optgroup label="튜브 방수얀">
+                    <option value="450 den">450 den</option>
+                    <option value="725 den">725 den</option>
+                    <option value="900 den">900 den</option>
+                  </optgroup>
                 </select>
               </td>
-              <td id="value"><input type="text" id="중량" placeholder="Total measured weight" onchange="얀잔량()"></td>
+              <td id="value"><input type="text" id="중량" class="입력" placeholder="Total measured weight" onchange="얀잔량()"></td>
               <td id="unit">kg</td>
             </tr>
             <tr>
               <td>지관 수 입력</td>
-              <td><input type="text" id="지관" value="1" placeholder="Number of Paper Tubes" onchange="얀잔량()"></td>
+              <td><input type="text" id="지관" value="1" class="입력" placeholder="Number of Paper Tubes" onchange="얀잔량()"></td>
               <td>EA</td>
             </tr>
             <tr>
               <td>포장 중량 입력</td>
               <td>
-                <input type="text" id="포장" placeholder="Package weight" onchange="얀잔량()" value="0">
+                <input type="text" id="포장" class="입력" placeholder="Package weight" onchange="얀잔량()" value="0">
               </td>
               <td>kg</td>
             </tr>
@@ -79,12 +85,15 @@
               <td><span id="결과"></span></td>
               <td>m</td>
             </tr>
+            <tr>
+              <td class="statement" colspan="3"><h4>※지관 정보</h4>튜브 방수얀 지관 : 180g<br>글라스얀 및 7100den 이상 아라미드얀 지관 : 460g<br> 2840den 이하 아라미드얀 지관 : 340g<br>틀린 정보가 있으면 알려주세요.</td>
+            </tr>
           </table>
         </div>
       </div>
       <!-- container -->
       <div class="footer">
-        <p class="copyright">&copy;copy 2019</p>
+        <p class="copyright">&copy; 2019 by MANSU</p>
       </div>
       <!-- footer -->
     </div>
