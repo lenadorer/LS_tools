@@ -6,7 +6,7 @@ function 얀잔량(){
   var net_weigth = 0;
   if (density[0]<950){net_weight=weight-0.18*papertube-pack_weight;}
     else if (density[0]<4000){net_weight=weight-0.34*papertube-pack_weight;}
-    else {net_weight=weight-0.46*papertube-pack-weight;};
+    else {net_weight=weight-0.46*papertube-pack_weight;}
   var unit = 9000;
   if (density[1]=="den"){unit=9000;}else if(density[1]=="dtex"){unit=10000;}else if(density[1]=="tex"){unit=1000;}
   if (weight == null || weight =="" || weight == 0 ){
